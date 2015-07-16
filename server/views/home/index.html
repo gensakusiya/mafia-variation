@@ -1,0 +1,50 @@
+{% extends '../layouts/default.html' %}
+
+{% block content %}
+<div class="">
+    <div id="enterGame" class="row">
+        <div class="col-lg-12">
+
+            <div class="form-group">
+                <input class="form-control floating-label" id="login" type="text" placeholder="Имя" data-hint="Напишите свое имя">
+            </div>
+
+            {% if user %}
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="leading"><span class="checkbox-material"><span class="check"></span></span> Ведущий
+                </label>
+            </div>
+            {% endif %}
+
+            <button type="button" id="joinButton" class="btn btn-primary">Присоедениться</button>
+
+        </div>
+    </div>
+    <div id="table" class="hidden row">
+        <div class="row">
+            <div class="name col-lg-12">
+                <h2 data-bind="name"></h2>
+            </div>
+        </div>
+        <div id="tableImg" class="jumbotron"></div>
+    </div>
+    {% if user %}
+    <div id="leadingPanel" class="row">
+        <!--<label for="isPlay">Играть</label>-->
+        <!--<input type="checkbox" id="isPlay" name="isPlay" />-->
+
+        <button id="startGame" class="btn btn-primary">Раздать</button>
+    </div>
+    <div id="processGame" class="">
+        <button id="day" class="btn btn-primary">День</button>
+        <button id="night" class="btn btn-primary">Ночь</button>
+
+        <div id="listRound"></div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+{% block scripts %}
+<script src='js/page/main.js'></script>
+{% endblock %}

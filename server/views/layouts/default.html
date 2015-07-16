@@ -1,0 +1,17 @@
+{% include '../includes/head.html' %}
+
+<body>
+{% include '../includes/header.html' %}
+<div class="container">
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</div>
+{% include '../includes/footer.html' %}
+{% include '../includes/foot.html' %}
+
+{% block scripts %}{% endblock %}
+{% block template %}{% endblock %}
+
+</body>
+</html>

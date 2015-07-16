@@ -1,0 +1,46 @@
+
+
+.hidden {
+    display: none;
+}
+
+.mafia {
+    width: 315px;
+    height: 605px;
+    background: url(../content/img/mafia.jpg) no-repeat;
+}
+.doctor {
+    width: 315px;
+    height: 605px;
+    background: url(../content/img/doctor.jpg) no-repeat;
+}
+.maniac {
+    width: 315px;
+    height: 605px;
+    background: url(../content/img/maniac.jpg) no-repeat;
+}
+.moron {
+    width: 315px;
+    height: 605px;
+    background: url(../content/img/moron.jpg) no-repeat;
+}
+.sheriff {
+    width: 315px;
+    height: 605px;
+    background: url(../content/img/sheriff.jpg) no-repeat;
+}
+.thief {
+    width: 315px;
+    height: 605px;
+    background: url(../content/img/thief.jpg) no-repeat;
+}
+.vegetable {
+    width: 315px;
+    height: 605px;
+    background: url(../content/img/vegetable.jpg) no-repeat;
+}
+.whore {
+    width: 315px;
+    height: 605px;
+    background: url(../content/img/whore.jpg) no-repeat;
+}
